@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin-left: 64px;
+    }
+
+    input, select {
+        margin-top: 8px;
+        margin-bottom: 24px;
+    }
+
+    input {
+        size: A5;
+    }
+</style>
+<body>
+
+<h2>ADD Homestay</h2>
+<form method="post">
+    <h4>Tên</h4>
+    <input type="text" name="name" required>
+
+    <h4>Thành phố</h4>
+    <select name="city">
+        <option selected>City</option>
+        {city}
+    </select>
+
+    <h4>Số phòng ngủ</h4>
+    <input type="number" name="bedroom" required>
+
+    <h4>Số phòng vệ sinh</h4>
+    <input type="number" name="wc" required>
+
+    <h4>Giá</h4>
+    <input type="number" name="price" required>
+
+    <h4>Mô tả</h4>
+    <textarea cols="20" rows="5" type="text" name="description" required></textarea>
+    <button type="submit">Thêm </button>
+</form>
+<a href="/home"><button type="submit"> Thoát</button></a>
+</body>
+</html>
